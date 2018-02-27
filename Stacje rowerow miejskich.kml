@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Staacje rowerow miejskich.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>Staacje rowerow miejskich</name>
+		<open>1</open>
+		<Placemark>
+			<name>Stacja rowerowa: Rondo Reagana</name>
+			<LookAt>
+				<longitude>17.06041469500453</longitude>
+				<latitude>51.1121346013485</latitude>
+				<altitude>0</altitude>
+				<heading>38.0123233049765</heading>
+				<tilt>20.11227293455637</tilt>
+				<range>80.25759765663632</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>17.06042813094917,51.11216298998095,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Stacja rowerowa:
+Politechnika Wrocławska - Gmach Główny </name>
+			<LookAt>
+				<longitude>17.06143165709439</longitude>
+				<latitude>51.1073026574776</latitude>
+				<altitude>0</altitude>
+				<heading>54.53009587989483</heading>
+				<tilt>25.08430167015027</tilt>
+				<range>236.4180589473597</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>17.06128135539826,51.1072044277485,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Stacja rowerowa:
+Smoluchowskiego - Łukaszewicza</name>
+			<LookAt>
+				<longitude>17.06466527424525</longitude>
+				<latitude>51.10778446650463</latitude>
+				<altitude>26.77666722224422</altitude>
+				<heading>54.53261265722494</heading>
+				<tilt>25.08419704119175</tilt>
+				<range>208.9442729034218</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>17.06477876202167,51.1081566073361,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Stacja rowerowa: Teki</name>
+			<LookAt>
+				<longitude>17.0855705077229</longitude>
+				<latitude>51.1037145923934</latitude>
+				<altitude>0</altitude>
+				<heading>20.39812403068603</heading>
+				<tilt>22.14488737170976</tilt>
+				<range>442.2313408932844</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>17.08480779507346,51.10406612914752,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Stacja rowerowa: Uniwersytet Wrocławski - Joliot Curie</name>
+			<LookAt>
+				<longitude>17.05330057033567</longitude>
+				<latitude>51.11015253827446</latitude>
+				<altitude>0</altitude>
+				<heading>13.00665901296515</heading>
+				<tilt>27.83796587667383</tilt>
+				<range>368.7253324086673</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>17.05277039360541,51.11056628193181,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Stacja rowerowa: Plac Grunwaldzki - Polaka</name>
+			<LookAt>
+				<longitude>17.05568467202272</longitude>
+				<latitude>51.11042408475298</latitude>
+				<altitude>0</altitude>
+				<heading>14.13855842210907</heading>
+				<tilt>13.79242089365188</tilt>
+				<range>70.00033466382983</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>17.05568467202272,51.11042408475298,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 51.106843, lng: 17.063619},
+          zoom: 15
+        });
+		
+		var imageHome = 'https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678085-house-48.png';
+		var facultyMarker = new google.maps.Marker({
+			position: {lat: 51.10304, lng: 17.08551},
+			map: map,
+			icon: imageHome
+        });
+		
+		var imageUni = 'https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678086-institution-48.png';
+		var facultyMarker = new google.maps.Marker({
+			position: {lat: 51.10426, lng: 17.05464},
+			map: map,
+			icon: imageUni
+        });
+
+    var imageMall = 'https://cdn0.iconfinder.com/data/icons/customicondesign-office6-shadow/64/shopping-basket-accept.png';
+		var facultyMarker = new google.maps.Marker({
+			position: {lat: 51.112054, lng: 17.059740},
+			map: map,
+			icon: imageMall
+        });
+
+    var imageBiedra = 'https://cdn1.iconfinder.com/data/icons/gardening-flat-1/614/1409_-_Lady_Bug-48.png';
+		var facultyMarker = new google.maps.Marker({
+			position: {lat: 51.103925, lng: 17.081162},
+			map: map,
+			icon: imageBiedra
+        });
+		
+    //Tworzenie linii
+		var flightPlanCoordinates = [
+          {lat: 51.103216, lng: 17.085539},
+          {lat: 51.103451, lng: 17.083766},
+          {lat: 51.104228, lng: 17.083454},
+          {lat: 51.104814, lng: 17.079640},
+          {lat: 51.107235, lng: 17.072652},
+          {lat: 51.108389, lng: 17.069088},
+          {lat: 51.111753, lng: 17.059773},
+          {lat: 51.111110, lng: 17.058552},
+          {lat: 51.108275, lng: 17.048142},
+          {lat: 51.105832, lng: 17.049053},
+          {lat: 51.105571, lng: 17.051182},
+          {lat: 51.105597, lng: 17.052952},
+          {lat: 51.104989, lng: 17.054533}
+        ];
+		var flightPath = new google.maps.Polyline({
+          path: flightPlanCoordinates,
+          geodesic: true,
+          strokeColor: '#FF0000',
+          strokeOpacity: 1.0,
+          strokeWeight: 2
+        });
+		
+		flightPath.setMap(map);
+
+    //Tworzenie poligona, budynek Bibliotecha
+    var bibliotechCoords = [
+          {lat: 51.109980, lng: 17.058502},
+          {lat: 51.109909, lng: 17.058263},
+          {lat: 51.109856, lng: 17.058300},
+          {lat: 51.109693, lng: 17.057701},
+          {lat: 51.109717, lng: 17.057680},
+          {lat: 51.109501, lng: 17.056893},
+          {lat: 51.109330, lng: 17.057236},
+          {lat: 51.109488, lng: 17.057834},
+          {lat: 51.109520, lng: 17.057813},
+          {lat: 51.109680, lng: 17.058409},
+          {lat: 51.109643, lng: 17.058439},
+          {lat: 51.109725, lng: 17.058710}
+    ];
+
+    var bibliotech = new google.maps.Polygon({
+          paths: bibliotechCoords,
+          strokeColor: '#FF0000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#FF0000',
+          fillOpacity: 0.35
+        });
+        bibliotech.setMap(map);
+
+    //Warstwa KML z danymi oz stacjach rowerowych we Wrocławiu
+    var ctaLayer = new google.maps.KmlLayer({
+          url: 'https://drive.google.com/open?id=1xT_o6F-sTz6JybhVlQ5bZi0wxHp6FOKA',
+          map: map
+    });
+
+	  }
+		  
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwf6AdnB1CaIVCENZcjqmkBPe00FpD4vs&callback=initMap"
+    async defer></script>
+  </body>
+</html>
